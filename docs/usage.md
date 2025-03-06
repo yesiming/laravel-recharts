@@ -2,7 +2,29 @@
 
 In your controller class:
 
+import script js in you html
+
+```
+<script src="/vendor/recharts/app.js"></script>
+
+```
+
+
+config/app.php
+
+
 ```php
+
+Kaishiyoku\LaravelRecharts\LaravelRechartsServiceProvider::class,
+
+```
+
+
+```php
+
+use Kaishiyoku\LaravelRecharts\LaravelRecharts;
+
+
 public function index()
 {
     $laravelRecharts = new LaravelRecharts();
